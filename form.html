@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Form</title>
+		<link rel="stylesheet" href="CSS/style.css">
+	</head>
+	<body class="content">
+		<nav class="bar">
+			<div class="menu_bar">
+				<a class="menu_link" href="Principal.html"><img class="menu_icon" src="images/icon.png" alt="Icon menu"></a>
+				<ul class="menu_list">
+					<li><a href="about_us.html"><b>About us</a></li>
+					<li><a href="services.html">Services</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li><a href="form.html">Contact form</b></a></li>
+				</ul>
+			</div>
+		</nav>
+		<div>
+			<div class="main_content">
+				<img src="images/icon_general.png" alt="Icon"></img>
+				<h1>Nani</h1>
+				<form action="http://vip.groupehn.com:20003/html/infospost.php" method="POST">
+					<div class="contact">
+						<div class="contact_sites right_marg">
+							<div class="cont_cont">
+								<label class="right_marg" for="firstname"><b>First Name:</b></label>
+								<input class="box_color box_form" id="firstname" type="text" name="firstname" required>
+							</div>
+							<div class="cont_cont">
+								<label class="right_marg" for="lastname"><b>Last Name:</b></label>
+								<input class="box_color box_form" id="lastname" type="text" name="lastname" required>
+							</div>
+						</div>
+						<div class="contact_sites">
+							<div class="cont_cont bot_marg">
+								<label class="right_marg" for="mail"><b>Email:</b></label>
+								<input class="box_color box_form" id="mail" type="email" name="email" placeholder="youremail@outlook.com" required>
+							</div>
+							<div class="cont_cont">
+								<label class="right_marg" for="country"><b>Country:</b></label>
+								<select class="box_color box_form" name="country" id="country" required>
+									<option value="">Select Country</option>
+									<option value="Spain">Spain</option>
+									<option value="Portugal">Portugal</option>
+									<option value="Italy">Italy</option>
+									<option value="France">France</option>
+									<option value="United Kingdom">United Kingdom</option>
+									<option value="Germany">Germany</option>
+									<option value="USA">USA</option>
+									<option value="Canada">Canada</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="content_header">
+						<label class="bot_marg" for="request"><b>Request:</b></label>
+						<textarea class="bot_marg" name="request" id="request" cols="66" rows="10" required></textarea>
+						<button class="button" type="submit"><b>Submit</b></button>
+					</div>
+				</form>
+			</div>			
+		</div>
+	</body>
+</html>
